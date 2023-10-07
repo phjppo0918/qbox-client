@@ -1,3 +1,7 @@
-<h1> 헤더임 </h1>
+<script>
+    import Header from "./Header.svelte";
+</script>
+
+<Header/>
 
 <slot></slot>
