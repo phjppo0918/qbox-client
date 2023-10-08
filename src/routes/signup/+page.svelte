@@ -6,17 +6,17 @@
 </script>
 <form method="post" class="login-container">
     <Card>
-        <h2 style="text-align: center"> 로그인 </h2>
+        <h2 style="text-align: center"> 회원가입 </h2>
         <Textfield
                 label="EMAIL"
                 value=""
                 input$name="email"/>
         <Textfield
-                label="PASSWORD"
+                label="NICKNAME"
                 value=""
-                input$name="password"/>
+                input$name="nickname"/>
         <Button color="primary" variant="raised">
-            <Label>LOGIN</Label>
+            <Label>SIGN UP</Label>
         </Button>
     </Card>
 </form>

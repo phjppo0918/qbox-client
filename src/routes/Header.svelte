@@ -19,12 +19,13 @@
             <Title>QBOX</Title>
         </Section>
         <Section align="end">
-            <Button variant="raised">
-                <Label>signup</Label>
+            <Button href="/signup" variant="raised">
+                <Label>sign up</Label>
             </Button>
-            <Button color="primary" variant="outlined">
-                <Label>signin</Label>
+            <Button href="/login" variant="outlined">
+                <Label>login</Label>
             </Button>
         </Section>
     </Row>
 </TopAppBar>
+<AutoAdjust {topAppBar}/>
