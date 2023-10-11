@@ -2,23 +2,44 @@
     import Textfield from "@smui/textfield";
     import Card from "@smui/card";
     import Button, {Label} from "@smui/button";
+    import axios from "axios";
+    import {goto} from "$app/navigation";
+
+    let email = "";
+    let password = "";
+
+    const sendData = () => {
+        const requestData = {
+            email,
+            password
+        };
+
+        axios({
+            method: "post",
+            url: "login",
+            data: requestData,
+            headers: {
+                "Content-Type": "multipart/form-data",
+            },
+        }).then(() => goto("/", {replaceState: true}));
+    }
 </script>
-<form method="post" class="login-container">
+
+
+<div class="login-container">
     <Card>
-        <h2 style="text-align: center"> 로그인 </h2>
+        <h2 style="text-align: center"> LOGIN </h2>
         <Textfield
                 label="EMAIL"
-                value=""
-                input$name="email"/>
+                bind:value={email}/>
         <Textfield
                 label="PASSWORD"
-                value=""
-                input$name="password"/>
-        <Button color="primary" variant="raised">
+                bind:value={password}/>
+        <Button color="primary" variant="raised" on:click={sendData}>
             <Label>LOGIN</Label>
         </Button>
     </Card>
-</form>
+</div>
 
 <style>
     .login-container {
