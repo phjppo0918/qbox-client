@@ -12,12 +12,13 @@
         const requestData = {
             email,
             nickname
-        }
+        };
+
         axios({
             method: "post",
             url: "members",
             data: requestData
-        }).then(() => goto("/signup/fin"))
+        }).then(() => goto("/signup/fin"));
 
     }
 </script>
@@ -26,12 +27,10 @@
         <h2 style="text-align: center"> SIGN UP </h2>
         <Textfield
                 label="EMAIL"
-                bind:value={email}
-                input$name="email"/>
+                bind:value={email}/>
         <Textfield
                 label="NICKNAME"
-                bind:value={nickname}
-                input$name="nickname"/>
+                bind:value={nickname}/>
         <Button color="primary" variant="raised" on:click={sendData}>
             <Label>NEXT</Label>
         </Button>
