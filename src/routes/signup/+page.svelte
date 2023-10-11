@@ -2,27 +2,44 @@
     import Textfield from "@smui/textfield";
     import Card from "@smui/card";
     import Button, {Label} from "@smui/button";
+    import { goto } from '$app/navigation';
+    import axios from "axios";
 
+    var email = ""
+    var nickname = ""
+
+    const sendData = () => {
+        const requestData = {
+            email,
+            nickname
+        }
+        axios({
+            method: "post",
+            url: "members",
+            data: requestData
+        }).then(() => goto("/signup/fin"))
+
+    }
 </script>
-<form method="post" class="login-container">
+<div class="signup-container">
     <Card>
-        <h2 style="text-align: center"> 회원가입 </h2>
+        <h2 style="text-align: center"> SIGN UP </h2>
         <Textfield
                 label="EMAIL"
-                value=""
+                bind:value={email}
                 input$name="email"/>
         <Textfield
                 label="NICKNAME"
-                value=""
+                bind:value={nickname}
                 input$name="nickname"/>
-        <Button color="primary" variant="raised">
-            <Label>SIGN UP</Label>
+        <Button color="primary" variant="raised" on:click={sendData}>
+            <Label>NEXT</Label>
         </Button>
     </Card>
-</form>
+</div>
 
 <style>
-    .login-container {
+    .signup-container {
         display: flex;
         justify-content: center;
         align-items: center;

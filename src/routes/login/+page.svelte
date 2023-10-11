@@ -2,7 +2,6 @@
     import Textfield from "@smui/textfield";
     import Card from "@smui/card";
     import Button, {Label} from "@smui/button";
-
 </script>
 <form method="post" class="login-container">
     <Card>
