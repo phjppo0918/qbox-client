@@ -1,4 +1,4 @@
-<script >
+<script>
     import Card from "@smui/card";
 </script>
 
