@@ -2,7 +2,7 @@
     import Textfield from "@smui/textfield";
     import Card from "@smui/card";
     import Button, {Label} from "@smui/button";
-    import { goto } from '$app/navigation';
+    import {goto} from '$app/navigation';
     import axios from "axios";
 
     var email = ""
@@ -43,5 +43,6 @@
         justify-content: center;
         align-items: center;
         height: 80vh;
+        flex-direction: column;
     }
 </style>
