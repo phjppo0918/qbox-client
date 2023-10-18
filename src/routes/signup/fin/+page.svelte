@@ -1,4 +1,4 @@
-<script>
+<script xmlns="http://www.w3.org/1999/html">
     import Button, {Label} from "@smui/button";
     import {goto} from "$app/navigation";
 
@@ -10,7 +10,7 @@
         회원가입을 완료했어요!
     </sub>
     <sub>
-        임시 비밀번호는 가입한 EMAIL로 전송했어요!
+        <strong>임시 비밀번호</strong>는 가입한 <strong>EMAIL</strong>로 전송했어요!
     </sub>
 
     <Button color="primary" style="margin-top: 10px;" variant="raised" on:click={() => goto("/login")}>

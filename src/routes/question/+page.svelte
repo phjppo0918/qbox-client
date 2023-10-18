@@ -3,7 +3,7 @@
     import LinearProgress from '@smui/linear-progress';
 </script>
 
-<h1>질문 목록</h1>
+<h4 style="text-align: center">Questions</h4>
 
 <DataTable table$aria-label="User list" style="width: 100%;">
     <Head>

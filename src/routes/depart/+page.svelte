@@ -37,7 +37,6 @@
         height: 70vh;
         padding-left: 100px;
         padding-right: 100px;
-
         flex-direction: row;
         flex-wrap: wrap;
         align-content: space-around;
