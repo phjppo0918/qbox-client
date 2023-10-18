@@ -17,23 +17,23 @@
     }
 </script>
 
-
 <div class="form-container">
-    <Card>
-        <h2 style="text-align: center"> 비밀번호 변경 </h2>
-        <Textfield
-                label="BEFORE_PASSWORD"
-                bind:value={beforePassword}/>
-        <Textfield
-                label="NEW_PASSWORD"
-                bind:value={newPassword}/>
-        <Textfield
-                label="PASSWORD_CONFIRM"
-                bind:value={newPasswordConfirm}/>
-        <Button color="primary" variant="raised" on:click={sendData}>
-            <Label>LOGIN</Label>
-        </Button>
-    </Card>
+    <h4 style="text-align: center"> 비밀번호 변경 </h4>
+    <Textfield
+            style="width: 240px;"
+            label="이전 비밀번호"
+            bind:value={beforePassword}/>
+    <Textfield
+            style="width: 240px;"
+            label="새로운 비밀번호"
+            bind:value={newPassword}/>
+    <Textfield
+            style="width: 240px;"
+            label="비밀번호 확인"
+            bind:value={newPasswordConfirm}/>
+    <Button style="width: 280px; margin-top: 1vh" color="primary" variant="raised" on:click={sendData}>
+        <Label>CHANGE PASSWORD</Label>
+    </Button>
 </div>
 
 <style>
@@ -41,8 +41,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
         height: 80vh;
-
+        flex-direction: column;
     }
 </style>

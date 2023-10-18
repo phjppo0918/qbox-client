@@ -25,12 +25,14 @@
 <div class="signup-container">
     <h4 style="text-align: center"> SIGN UP </h4>
     <Textfield
+            style="width: 240px;"
             label="EMAIL"
             bind:value={email}/>
     <Textfield
+            style="width: 240px;"
             label="NICKNAME"
             bind:value={nickname}/>
-    <Button style="width: 180px; margin-top: 1vh" color="primary" variant="raised" on:click={sendData}>
+    <Button style="width: 280px; margin-top: 1vh" color="primary" variant="raised" on:click={sendData}>
         <Label>NEXT</Label>
     </Button>
 </div>

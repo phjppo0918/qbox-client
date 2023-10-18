@@ -2,7 +2,7 @@
     import Card from "@smui/card";
 </script>
 
-<h1>강의 목록</h1>
+<h3 style="text-align: center">Lectures</h3>
 
 <div class="card-display">
     <div class="card-container">

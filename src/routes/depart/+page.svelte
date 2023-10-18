@@ -1,35 +1,46 @@
 <script lang="ts">
     import Card from "@smui/card";
+    import Button, {Label} from "@smui/button";
+    import {goto} from "$app/navigation";
 </script>
 
-<h1>학과 목록</h1>
+<h3 style="text-align: center">Departs</h3>
 
 <div class="card-display">
-    <div class="card-container">
-        <Card color="secondary" variant="raised" padded>경영</Card>
-    </div>
-    <div class="card-container">
-        <Card color="secondary" variant="raised" padded>컴공</Card>
-    </div>
-    <div class="card-container">
-        <Card color="secondary" variant="raised" padded>겜공</Card>
-    </div>
+    <Button color="primary"
+            style="width: 200px; height: 150px;"
+            variant="raised"
+            on:click={() => goto("/login")}>
+        <Label>경영학부</Label>
+    </Button>
+    <Button color="primary"
+            style="width: 200px; height: 150px;"
+            variant="raised"
+            on:click={() => goto("/login")}>
+        <Label>경영학부</Label>
+    </Button>
+    <Button color="primary"
+            style="width: 200px; height: 150px;"
+            variant="raised"
+            on:click={() => goto("/login")}>
+        <Label>경영학부</Label>
+    </Button>
+
 </div>
 
 
 <style>
     .card-display {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         height: 70vh;
+        padding-left: 100px;
+        padding-right: 100px;
+
         flex-direction: row;
         flex-wrap: wrap;
         align-content: space-around;
     }
 
-    .card-container {
-        height: 20vw;
-        width: 18vw;
-    }
 </style>
