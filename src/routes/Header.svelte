@@ -1,19 +1,13 @@
 <script>
     import Button, {Label} from "@smui/button";
 
-    import TopAppBar, {
-        Row,
-        Section,
-        Title,
-        AutoAdjust,
-    } from '@smui/top-app-bar';
+    import TopAppBar, {AutoAdjust, Row, Section, Title,} from '@smui/top-app-bar';
 
     let topAppBar;
 </script>
 
 
-
-<TopAppBar color="secondary" bind:this={topAppBar} variant="short">
+<TopAppBar bind:this={topAppBar} color="secondary" variant="short">
     <Row>
         <Section>
             <Title>QBOX</Title>

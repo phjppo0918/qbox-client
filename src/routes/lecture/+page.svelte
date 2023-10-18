@@ -1,5 +1,4 @@
 <script>
-    import Card from "@smui/card";
     import Button, {Label} from "@smui/button";
     import {goto} from "$app/navigation";
 </script>
@@ -8,24 +7,24 @@
 
 <div class="card-display">
     <Button color="primary"
+            on:click={() => goto("/login")}
             style="width: 70%; height: 40px;
                         margin: 10px;"
-            variant="raised"
-            on:click={() => goto("/login")}>
+            variant="raised">
         <Label>웹프로그래밍기초</Label>
     </Button>
     <Button color="primary"
+            on:click={() => goto("/login")}
             style="width: 70%; height: 40px;
                      margin: 10px;"
-            variant="raised"
-            on:click={() => goto("/login")}>
+            variant="raised">
         <Label>웹프로그래밍응용</Label>
     </Button>
     <Button color="primary"
+            on:click={() => goto("/login")}
             style="width: 70%; height: 40px;
                    margin: 10px;"
-            variant="raised"
-            on:click={() => goto("/login")}>
+            variant="raised">
         <Label>프로그래밍과데이터분석</Label>
     </Button>
 </div>

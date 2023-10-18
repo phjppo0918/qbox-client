@@ -1,6 +1,5 @@
 <script>
     import Textfield from "@smui/textfield";
-    import Card from "@smui/card";
     import Button, {Label} from "@smui/button";
     import axios from "axios";
     import {goto} from "$app/navigation";
@@ -29,14 +28,14 @@
 <div class="login-container">
     <h4 style="text-align: center"> LOGIN </h4>
     <Textfield
-            style="width: 240px;"
+            bind:value={email}
             label="EMAIL"
-            bind:value={email}/>
+            style="width: 240px;"/>
     <Textfield
-            style="width: 240px;"
+            bind:value={password}
             label="PASSWORD"
-            bind:value={password}/>
-    <Button style="width: 280px; margin-top: 1vh" color="primary" variant="raised" on:click={sendData}>
+            style="width: 240px;"/>
+    <Button color="primary" on:click={sendData} style="width: 280px; margin-top: 1vh" variant="raised">
         <Label>LOGIN</Label>
     </Button>
 </div>

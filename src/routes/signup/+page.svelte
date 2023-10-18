@@ -1,6 +1,5 @@
 <script>
     import Textfield from "@smui/textfield";
-    import Card from "@smui/card";
     import Button, {Label} from "@smui/button";
     import {goto} from '$app/navigation';
     import axios from "axios";
@@ -25,14 +24,14 @@
 <div class="signup-container">
     <h4 style="text-align: center"> SIGN UP </h4>
     <Textfield
-            style="width: 240px;"
+            bind:value={email}
             label="EMAIL"
-            bind:value={email}/>
+            style="width: 240px;"/>
     <Textfield
-            style="width: 240px;"
+            bind:value={nickname}
             label="NICKNAME"
-            bind:value={nickname}/>
-    <Button style="width: 280px; margin-top: 1vh" color="primary" variant="raised" on:click={sendData}>
+            style="width: 240px;"/>
+    <Button color="primary" on:click={sendData} style="width: 280px; margin-top: 1vh" variant="raised">
         <Label>NEXT</Label>
     </Button>
 </div>

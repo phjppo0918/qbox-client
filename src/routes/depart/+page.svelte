@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Card from "@smui/card";
     import Button, {Label} from "@smui/button";
     import {goto} from "$app/navigation";
 </script>
@@ -8,21 +7,21 @@
 
 <div class="card-display">
     <Button color="primary"
+            on:click={() => goto("/login")}
             style="width: 200px; height: 150px;"
-            variant="raised"
-            on:click={() => goto("/login")}>
+            variant="raised">
         <Label>경영학부</Label>
     </Button>
     <Button color="primary"
+            on:click={() => goto("/login")}
             style="width: 200px; height: 150px;"
-            variant="raised"
-            on:click={() => goto("/login")}>
+            variant="raised">
         <Label>경영학부</Label>
     </Button>
     <Button color="primary"
+            on:click={() => goto("/login")}
             style="width: 200px; height: 150px;"
-            variant="raised"
-            on:click={() => goto("/login")}>
+            variant="raised">
         <Label>경영학부</Label>
     </Button>
 

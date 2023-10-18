@@ -1,11 +1,11 @@
 <script>
-    import DataTable, {Head, Body, Row, Cell} from '@smui/data-table';
+    import DataTable, {Body, Cell, Head, Row} from '@smui/data-table';
     import LinearProgress from '@smui/linear-progress';
 </script>
 
 <h4 style="text-align: center">Questions</h4>
 
-<DataTable table$aria-label="User list" style="width: 100%;">
+<DataTable style="width: 100%;" table$aria-label="User list">
     <Head>
         <Row>
             <Cell numeric>ID</Cell>
@@ -38,8 +38,8 @@
     </Body>
 
     <LinearProgress
-            indeterminate
             aria-label="Data is being loaded..."
+            indeterminate
             slot="progress"
     />
 </DataTable>

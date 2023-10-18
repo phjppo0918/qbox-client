@@ -1,6 +1,6 @@
 <script>
     // Import markdown conversion library
-    import { marked } from 'marked'
+    import {marked} from 'marked'
 
     // Declare a variable to store the markdown data
     let markdown = ""

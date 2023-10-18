@@ -1,7 +1,6 @@
 <script xmlns="http://www.w3.org/1999/html">
     import Button, {Label} from "@smui/button";
     import {goto} from "$app/navigation";
-
 </script>
 
 <div class="main-wrap">
@@ -13,7 +12,7 @@
         <strong>임시 비밀번호</strong>는 가입한 <strong>EMAIL</strong>로 전송했어요!
     </sub>
 
-    <Button color="primary" style="margin-top: 10px;" variant="raised" on:click={() => goto("/login")}>
+    <Button color="primary" on:click={() => goto("/login")} style="margin-top: 10px;" variant="raised">
         <Label>Login 페이지로</Label>
     </Button>
 </div>
