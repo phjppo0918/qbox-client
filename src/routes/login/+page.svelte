@@ -27,18 +27,16 @@
 
 
 <div class="login-container">
-    <Card>
-        <h2 style="text-align: center"> LOGIN </h2>
-        <Textfield
-                label="EMAIL"
-                bind:value={email}/>
-        <Textfield
-                label="PASSWORD"
-                bind:value={password}/>
-        <Button color="primary" variant="raised" on:click={sendData}>
-            <Label>LOGIN</Label>
-        </Button>
-    </Card>
+    <h2 style="text-align: center"> LOGIN </h2>
+    <Textfield
+            label="EMAIL"
+            bind:value={email}/>
+    <Textfield
+            label="PASSWORD"
+            bind:value={password}/>
+    <Button style="width: 180px; margin-top: 1vh" color="primary" variant="raised" on:click={sendData}>
+        <Label>LOGIN</Label>
+    </Button>
 </div>
 
 <style>
@@ -47,5 +45,6 @@
         justify-content: center;
         align-items: center;
         height: 80vh;
+        flex-direction: column;
     }
 </style>

@@ -23,18 +23,16 @@
     }
 </script>
 <div class="signup-container">
-    <Card>
-        <h2 style="text-align: center"> SIGN UP </h2>
-        <Textfield
-                label="EMAIL"
-                bind:value={email}/>
-        <Textfield
-                label="NICKNAME"
-                bind:value={nickname}/>
-        <Button color="primary" variant="raised" on:click={sendData}>
-            <Label>NEXT</Label>
-        </Button>
-    </Card>
+    <h2 style="text-align: center"> SIGN UP </h2>
+    <Textfield
+            label="EMAIL"
+            bind:value={email}/>
+    <Textfield
+            label="NICKNAME"
+            bind:value={nickname}/>
+    <Button style="width: 180px; margin-top: 1vh" color="primary" variant="raised" on:click={sendData}>
+        <Label>NEXT</Label>
+    </Button>
 </div>
 
 <style>
