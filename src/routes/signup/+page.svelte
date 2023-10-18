@@ -23,7 +23,7 @@
     }
 </script>
 <div class="signup-container">
-    <h2 style="text-align: center"> SIGN UP </h2>
+    <h4 style="text-align: center"> SIGN UP </h4>
     <Textfield
             label="EMAIL"
             bind:value={email}/>
